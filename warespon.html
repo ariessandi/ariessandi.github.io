@@ -49,7 +49,7 @@ function myFunctionButton() {
     let message= "Nama :"+nama+"\r\n\r\n"+"Phone :"+phone+"\r\n\r\n"+"email :"+email+"\r\n\r\n"+"message :"+mess+"\r\n\r\n";
     let waMess = window.encodeURIComponent(message);
 
-  document.getElementById("buttonwa").innerHTML ='<button onclick="location.href = \'https://api.whatsapp.com/send?phone=' + phone + 'text=' + waMess + '\'";>Tweet This</button>';
+  document.getElementById("buttonwa").innerHTML ='<button onclick="location.href = \'https://api.whatsapp.com/send?phone=' + phone + '&text=' + waMess + '\'";>Send To WA</button>';
   
 }
 </script>
