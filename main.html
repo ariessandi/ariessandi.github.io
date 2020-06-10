@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ROPANG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styleku.css">
+<script src="js/autoItung.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="header">
+  <h1>ROPANG XY</h1>
+  <p>Create it, Your Way!</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Menu</a>
+  <a href="#">Kontak</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" style="width:15%">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="image/sandi_green.png" width="95%"/>
+      <p>My Name is Muhammad Untung Ariessandi</p>
+    </div>
+    <!--div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div-->
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn" style="width:85%">
+    <div class="card">
+      <h2>ROPANG MENU</h2>
+      <h5>Created By Ariessandi, Jun 10, 2020</h5>
+      <hr></hr>
+
+
+<div id="container">
+  <div class="block">
+    <p align="center">
+    <div id="proda" class="gallery">
+    
+        <!--img src="image/imgc.jpg" alt="Forest" width="600" height="400"-->
+        <button class="button" height="400">MANIS</button>
+      <div class="desc">
+        <input id="arad" type="radio" name="aRadios" onclick="handleClick(this);UpdateCost()" value="15000" />
+        Ropang Manis<br>Rp 15000
+      </div>
+    </div>
+    </p>
+  </div>    
+  <div class="block">
+    <p align="center">
+    <div id="prodb" class="gallery">
+    
+        <!--img src="image/imgc.jpg" alt="Forest" width="600" height="400"-->
+     <button class="button button2" height="400">ASIN</button>
+      <div class="desc">
+        <input id="brad" type="radio" name="aRadios" onclick="handleClick(this);UpdateCost()" value="20000" />
+        Ropang Asin<br>Rp 20000
+      </div>
+    </div>
+    </p>
+  </div>        
+</div>
+
+<div class="rowx" style="align:center;padding:20px;">
+  <div class="gallery" style="width:400px;">
+          <p align="center" >         
+            <b>Choose Roppang Size:</b><br><br>
+            <input id="crad" type="radio" name="myRadios" onclick="UpdateCost()" value="-3000" />Kilo &nbsp;&nbsp;
+            <input id="drad" type="radio" name="myRadios" onclick="UpdateCost()" value="0" checked />Mega &nbsp;&nbsp;
+            <input id="erad" type="radio" name="myRadios" onclick="UpdateCost()" value="5000" />Giga        
+          </p>  
+  </div>        
+</div>
+
+<div class="rowx" style="align:center;padding:20px;">
+<div id="container">
+  <div class="block">
+    <p align="center">
+    <div id="proda" class="gallery">
+    
+<input type="checkbox" id='item0' value="1000"  onclick="UpdateCost()">Milo (1000)<br>
+<input type="checkbox" id='item1' value="1000" onclick="UpdateCost()">Meses (1000)<br>
+<input type="checkbox" id='item2' value="1000" onclick="UpdateCost()">Chocochip (1000)<br>
+<input type="checkbox" id='item3' value="1000" onclick="UpdateCost()">Koko Krunch (1000)<br>
+
+    </div>
+    </p>
+  </div>    
+
+  <div class="block">
+    <p align="center">
+    <div id="prodb" class="gallery">
+<input type="checkbox" id='item4' value="3000" onclick="UpdateCost()">Mozarella (3000)<br>
+<input type="checkbox" id='item5' value="3000"  onclick="UpdateCost()">Cheddar (3000)<br>
+<input type="checkbox" id='item6' value="3000" onclick="UpdateCost()">Green Tea (3000)<br>
+<input type="checkbox" id='item7' value="3000" onclick="UpdateCost()">Boba (3000)<br>    
+
+    </div>
+    </p>
+  </div>
+
+  <div class="block" style="height:100px">
+    <p align="center">
+    <div id="prodb" class="gallery">
+<input type="checkbox" id='item8' value="5000" onclick="UpdateCost()">Tuna (5000)<br>
+<input type="checkbox" id='item9' value="5000" onclick="UpdateCost()">Ayam (5000)<br>
+<input type="checkbox" id='item10' value="5000" onclick="UpdateCost()">Pepperoni (5000)<br>
+<input type="checkbox" id='item11' value="5000" onclick="UpdateCost()">Kornet (5000)<br>    
+
+    </div>
+
+    <div style="display:none;" >
+<input type="checkbox" id='item12' value="-3000.00" onclick="UpdateCost()">Kilo(-3000)<br>
+<input type="checkbox" id='item13' value="0.00" onclick="UpdateCost()">Mega (0)<br>
+<input type="checkbox" id='item14' value="5000.00" onclick="UpdateCost()">Giga(5000)<br>
+<input type="checkbox" id='item15' value="15000" onclick="UpdateCost()">Manis (15000)<br>
+<input type="checkbox" id='item16' value="20000" onclick="UpdateCost()">Asin(20000)<br>
+</div>
+    </p>
+  </div> 
+
+</div>      
+</div>
+
+
+
+<div class="row" style="align:center;padding:20px;">
+  <div class="gallery" style="width:400px;">
+          <p align="center">         
+            <b>This is yor price:</b><br><br>
+            <input type=hidden id="totalcost"> 
+            <b id="total"></b>
+          </p>  
+  </div>        
+</div>
+
+
+
+   </div>
+
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h2>Copy Right @2020</h2>
+</div>
+
+</body>
+</html>
